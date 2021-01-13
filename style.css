@@ -1,9 +1,131 @@
-a{
+a {
     text-decoration: none;
 }
-img{
+img {
     width: 100%;
 }
+
+.header-top-left span {
+    display: inline-block;
+    margin-top: 7px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=textarea] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+
+button:hover {
+    opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+/* .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+} */
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+.nav .logo a {
+    font-weight: bold;
+    font-size: 35px;
+}
+
 .nav a.nav-link {
     font-weight: bold;
 }
@@ -12,11 +134,11 @@ img{
 }
 
 #carousel .carousel-item.boat {
-    background-image: url("images/1.jpg");
+    background-image: url("images/2.jpg");
 }
 
 #carousel .carousel-item.sea {
-    background-image: url("images/2.jpg");
+    background-image: url("images/4.jpg");
 }
 
 #carousel .carousel-item.river {
@@ -101,13 +223,13 @@ img{
     text-align: center;
     padding: 5%;
 }
-.faculties h1{
+.faculties h1 {
     line-height: 2em;
 
 }
 
 
-.faculties p{
+.faculties p {
     color: #1c8314;
 }
 .artibox h4 {
@@ -208,92 +330,119 @@ img{
 }
 
 ul {
-	list-style: none;
+    list-style: none;
+}
+
+.pagination a {
+    color: #1C8314;
+}
+
+.pagination a:hover {
+    color: #000;
 }
 
 .footer {
-	background-color: #24262b;
+    background-color: #24262b;
 }
 .footer .container {
     padding: 70px 0;
 }
 .footer-col {
-	width: 25%;
-	padding: 0 15px;
+    width: 33.33%;
+    padding: 0 15px;
 }
 
 .footer-col h4 {
-	font-size: 18px;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
 }
 
 .footer-col h4::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	bottom: -10px;
-	background-color: #1c8314;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #1c8314;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
 }
 
 .footer-col ul li:not(:last-child) {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .footer-col ul li a {
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-	color: #ffffff;
-	padding-left: 8px;
+    color: #ffffff;
+    padding-left: 8px;
 }
 
 .footer-col .social-links a {
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255, 255, 255, 0.2);
-	margin: 0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
 }
 
 .footer-col .social-links a:hover {
-	color: #24262b;
-	background-color: #ffffff;
+    color: #24262b;
+    background-color: #ffffff;
 }
-.copyright{
+.copyright {
     position: relative;
     bottom: 0;
 }
 
+.gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #1C8314;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+}
+
+.gotopbtn:hover {
+    color: #000;
+}
+
 /*responsive*/
 @media(max-width: 767px) {
-	.footer-col {
-		width: 50%;
-		margin-bottom: 30px;
-	}
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
 }
 
 @media(max-width: 574px) {
-	.footer-col {
-		width: 100%;
-	}
+    .footer-col {
+        width: 100%;
+    }
 }
